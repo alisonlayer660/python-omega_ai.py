@@ -16,8 +16,10 @@ import os
 USERNAME = "shishir"
 PASSWORD = "omega123"
 
-TELEGRAM_TOKEN = "PUT_YOUR_BOT_TOKEN_HERE"
-CHAT_ID = "PUT_YOUR_GROUP_ID_HERE"
+import os
+
+TELEGRAM_TOKEN = os.getenv("8525672936:AAF9EhUr1-Ufkhuu_ljtNs4DxpbDmuuOtq0")
+CHAT_ID = os.getenv("-1003850982234")
 
 app = Flask(__name__)
 app.secret_key = "OMEGA_SECRET_KEY"
@@ -248,3 +250,4 @@ if __name__=="__main__":
 
     app.run(port=5000)
 ```
+
